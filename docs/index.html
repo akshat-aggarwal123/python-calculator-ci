@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Python Calculator Project</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
-    h1 { color: #333; }
-    code { background: #eee; padding: 4px; border-radius: 4px; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator by Akshat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to Python Calculator Project</h1>
-  <p>This project demonstrates how to:</p>
-  <ul>
-    <li>Implement a simple calculator in Python</li>
-    <li>Write unit tests using <code>pytest</code></li>
-    <li>Set up GitHub Actions for CI</li>
-  </ul>
+  <div class="container">
+    <h1>Simple Calculator</h1>
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('/')">/</button>
 
-  <h2>Repository Link:</h2>
-  <p><a href="https://github.com/akshat-aggarwal123/python-calculator-ci" target="_blank">GitHub Repository</a></p>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('*')">*</button>
 
-  <h2>Project Structure</h2>
-  <pre>
-python-calculator-ci/
-│── calculator.py
-│── requirements.txt
-│── tests/
-│   └── test_calculator.py
-│── .github/workflows/ci.yml
-│── docs/
-│   └── index.html
-  </pre>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('-')">-</button>
 
-  <p>Created by <strong>Akshat Aggarwal</strong></p>
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="press('+')">+</button>
+
+      <button onclick="clearDisplay()" class="clear">C</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
